@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anshika Srivastava | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{--bg:#0b0d12;--panel:#121622;--soft:#1a2030;--text:#e6e9f2;--muted:#9aa3b2;--accent:#7c83ff;--accent2:#4fd1c5}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:linear-gradient(180deg,#0b0d12,#0f1422);color:var(--text)}
+
+.container{max-width:1100px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;background:rgba(11,13,18,.6);backdrop-filter:blur(10px);border-bottom:1px solid #1f2536}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand{font-weight:700;letter-spacing:.3px}
+nav a{color:var(--muted);margin-left:18px;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--text)}
+
+.hero{padding:96px 0 72px}
+.title{font-size:44px;line-height:1.15;font-weight:700}
+.subtitle{margin-top:10px;color:var(--muted);font-size:16px}
+.actions{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 18px;border-radius:10px;border:1px solid #242b40;background:#151a2b;color:var(--text);cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));border:none}
+.btn:hover{transform:translateY(-1px)}
+
+.section{padding:64px 0}
+.section h2{font-size:24px;margin-bottom:18px}
+.card{background:var(--panel);border:1px solid #1f2536;border-radius:16px;padding:20px}
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+
+.kpi{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.badge{padding:6px 10px;border-radius:999px;background:#151a2b;border:1px solid #232a40;font-size:12px;color:#cfd6e6}
+
+.skill{display:flex;justify-content:space-between;align-items:center}
+.bar{height:6px;background:#202742;border-radius:999px;margin-top:8px}
+.progress{height:6px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+
+.project{display:flex;flex-direction:column;gap:10px}
+.project .links a{margin-right:10px;font-size:13px;color:#aab2ff;text-decoration:none}
+.project .links a:hover{text-decoration:underline}
+
+.ach{display:flex;gap:12px}
+.ach-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#151a2b;border:1px solid #232a40}
+.ach p{color:var(--muted);font-size:14px}
+
+.contact{display:grid;gap:12px}
+.contact a{color:#c7ceff;text-decoration:none}
+.contact a:hover{text-decoration:underline}
+
+footer{border-top:1px solid #1f2536;padding:20px 0;color:#8f97a8;font-size:13px}
+
+/* subtle reveal */
+.reveal{opacity:0;transform:translateY(16px);transition:.6s}
+.reveal.show{opacity:1;transform:none}
+</style>
+</head>
+
+<body>
+<nav>
+  <div class="container nav-inner">
+    <div class="brand">Anshika Srivastava</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="title">Web Developer & AI Enthusiast</div>
+    <div class="subtitle">Building clean, scalable applications with strong UI and real-world impact.</div>
+    <div class="actions">
+      <button class="btn primary" onclick="scrollToProjects()">View Projects</button>
+      <a class="btn" href="https://drive.google.com/file/d/19723em3dVe0UyzrOCbxN76GM7Ho_8bHq/view?usp=sharing" target="_blank">View Resume</a>
+    </div>
+    <div class="kpi">
+      <span class="badge">Noida Institute of Engineering and Technology (2023–2027)</span>
+      <span class="badge">CGPA: 8.90</span>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <div class="container card reveal">
+    <h2>About</h2>
+    <p class="subtitle">I am Anshika Srivastava, a B.Tech IT student passionate about building practical, user-centric web and AI solutions. I have developed projects in healthcare, natural language processing, and weather intelligence, focusing on performance, usability, and real-world impact.</p>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <div class="grid grid-3">
+
+      <div class="card reveal">
+        <h3>Languages</h3>
+        <p class="subtitle">Java, Python, C</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Web Development</h3>
+        <p class="subtitle">HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Database</h3>
+        <p class="subtitle">MySQL</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>AI/ML</h3>
+        <p class="subtitle">NLP Basics, Model Usage</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Core Concepts</h3>
+        <p class="subtitle">Data Structures, OOP</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Tools</h3>
+        <p class="subtitle">Git, VS Code</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid grid-2">
+      <div class="card project reveal">
+        <h3>SehatSetu</h3>
+        <p class="subtitle">AI healthcare portal with role-based access, real-time communication, and automated workflows.</p>
+        <div class="links">
+          <a href="https://github.com/Anshika22-03/AI_Summit">Code</a>
+        </div>
+      </div>
+      <div class="card project reveal">
+        <h3>Medilingo</h3>
+        <p class="subtitle">Flask-based NLP app to summarize medical reports in multiple languages.</p>
+        <div class="links">
+          <a href="https://github.com/Anshika22-03/MediLingo">Code</a>
+        </div>
+      </div>
+      <div class="card project reveal">
+        <h3>LiveSky Odyssey</h3>
+        <p class="subtitle">Weather intelligence app with geolocation and forecast visualization.</p>
+        <div class="links">
+          <a href="https://github.com/Anshika22-03/LiveSky-Odyssey">Code</a>
+        </div>
+      </div>
+      <div class="card project reveal">
+        <h3>Data2Spend</h3>
+        <p class="subtitle">Expense analytics platform turning raw data into actionable insights.</p>
+        <div class="links">
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements" class="section">
+  <div class="container">
+    <h2>Achievements</h2>
+    <div class="grid grid-2">
+      <div class="card ach reveal">
+        <div class="ach-icon">🏆</div>
+        <div>
+          <b>Global AI Summit</b>
+          <p>1st Runner-Up</p>
+        </div>
+      </div>
+      <div class="card ach reveal">
+        <div class="ach-icon">🥇</div>
+        <div>
+          <b>Google HackSpace</b>
+          <p>Top 25</p>
+        </div>
+      </div>
+      <div class="card ach reveal">
+        <div class="ach-icon">🎯</div>
+        <div>
+          <b>HackO’Clock</b>
+          <p>Top 50</p>
+        </div>
+      </div>
+      <div class="card ach reveal">
+        <div class="ach-icon">💡</div>
+        <div>
+          <b>Smart India Hackathon</b>
+          <p>Qualified (Internal Round)</p>
+        </div>
+      </div>
+      <div class="card ach reveal">
+        <div class="ach-icon">🥈</div>
+        <div>
+          <b>Brainobrain Wonderkid 2018</b>
+          <p>Silver Topper</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container card reveal contact">
+    <h2>Contact</h2>
+    <div>Email: <a href="mailto:anshika.srivastava2203@gmail.com">anshika.srivastava2203@gmail.com</a></div>
+    <div>Phone: +91 6394746502</div>
+    <div>GitHub: <a href="https://github.com/Anshika22-03">Anshika22-03</a></div>
+    <div>LinkedIn: <a href="https://www.linkedin.com/in/anshika-srivastava-3239742a3">anshika-srivastava-3239742a3</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Anshika Srivastava</div>
+</footer>
+
+<script>
+function scrollToProjects(){document.getElementById('projects').scrollIntoView({behavior:'smooth'})}
+
+// reveal on scroll
+const els=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show')}})
+},{threshold:.15});
+els.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
