@@ -20,15 +20,35 @@ nav a:hover{color:var(--text)}
 
 .hero{padding:96px 0 72px}
 .title{font-size:44px;line-height:1.15;font-weight:700}
-.subtitle{margin-top:10px;color:var(--muted);font-size:16px}
+.subtitle{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:14px;
+}
 .actions{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:12px 18px;border-radius:10px;border:1px solid #242b40;background:#151a2b;color:var(--text);cursor:pointer}
+.btn{
+  padding:12px 18px;
+  border-radius:10px;
+  border:1px solid #242b40;
+  background:#151a2b;
+  color:var(--text);
+  cursor:pointer;
+  margin-top:auto;   /* ✅ pushes button down */
+}
 .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));border:none}
 .btn:hover{transform:translateY(-1px)}
 
 .section{padding:64px 0}
 .section h2{font-size:24px;margin-bottom:18px}
-.card{background:var(--panel);border:1px solid #1f2536;border-radius:16px;padding:20px}
+.card{
+  background:var(--panel);
+  border:1px solid #1f2536;
+  border-radius:16px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;   /* ✅ THIS FIXES OVERLAP */
+}
 .grid{display:grid;gap:18px}
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
@@ -68,6 +88,7 @@ footer{border-top:1px solid #1f2536;padding:20px 0;color:#8f97a8;font-size:13px}
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
       <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
     </div>
@@ -168,6 +189,52 @@ footer{border-top:1px solid #1f2536;padding:20px 0;color:#8f97a8;font-size:13px}
           <a href="#">Code</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="section">
+  <div class="container">
+    <h2>Certifications</h2>
+
+    <div class="grid grid-2">
+
+      <div class="card reveal">
+        <h3>Cisco Networking Academy</h3>
+        <p class="subtitle">Networking Essentials</p>
+        <a class="btn" href="https://drive.google.com/file/d/1RcYT5TfQsRy5URFA9g0ItSSxzOU3Gti3/view?usp=sharing" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card reveal">
+        <h3>Cisco Networking Academy</h3>
+        <p class="subtitle">Introduction to Cybersecurity</p>
+        <a class="btn" href="https://drive.google.com/file/d/1uemTTnMPlcsK_hAEH3OPwbkW0Xyh7avh/view?usp=sharing" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card reveal">
+        <h3>NASSCOM</h3>
+        <p class="subtitle">Digital Application Fundamentals (STEM)</p>
+        <a class="btn" href="https://drive.google.com/file/d/15AQeQxUDrNp782y10yAVfBlOWSlkdlbr/view?usp=sharing" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card reveal">
+        <h3>Infosys Springboard</h3>
+        <p class="subtitle">Java Programming Fundamentals</p>
+        <a class="btn" href="https://drive.google.com/file/d/16sCOdP-VDMJ5HJiOh7ZJKIPpsoeNYltu/view?usp=sharing" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card reveal">
+        <h3>Infosys Springboard</h3>
+        <p class="subtitle">Introduction to Artificial Intelligence</p>
+        <a class="btn" href="https://drive.google.com/file/d/1RrhugXrimTzANfBOI3PWClXl6TcyZ6KR/view?usp=sharing" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card reveal">
+        <h3>Infosys Springboard</h3>
+        <p class="subtitle">Explore Machine Learning using Python</p>
+        <a class="btn" href="https://drive.google.com/file/d/1QKyi2q7xL1G4o-OV8NQu-Uxx4uLz24Hs/view?usp=sharing" target="_blank">View Certificate</a>
+      </div>
+
     </div>
   </div>
 </section>
